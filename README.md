@@ -1,4 +1,4 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+Template - [Figma](https://www.figma.com/design/40Fc50DMZxIZFIaA1zuZtb/Positivus-Landing-Page-Design-g-Community-?node-id=330-762&t=V5IfG1KPxCxpyTYh-0)
 
 ## Getting Started
 
