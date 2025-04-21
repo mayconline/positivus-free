@@ -18,6 +18,7 @@
   --font-sans: var(--font-geist-sans);
   --text-4xl: 2.5rem;
   --shadow-card: 0px 5px 0px 0px var(--dark);
+  --radius-1xl: 0.875rem;
   --radius-5xl: 2.813rem;
 }
 

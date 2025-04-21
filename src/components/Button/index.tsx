@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import type { ButtonHTMLAttributes } from 'react';
+import { Spinner } from '@/components';
 
 export enum ButtonVariant {
   Primary = 'primary',
@@ -9,6 +10,7 @@ export enum ButtonVariant {
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: ButtonVariant;
+  isLoading?: boolean;
 }
 
 export const Button = ({
@@ -16,6 +18,7 @@ export const Button = ({
   variant = ButtonVariant.Primary,
   className,
   disabled,
+  isLoading = false,
   ...props
 }: ButtonProps) => {
   const buttonClassesVariant = {
@@ -36,7 +39,7 @@ export const Button = ({
       disabled={disabled}
       {...props}
     >
-      {children}
+      {isLoading ? <Spinner /> : children}
     </button>
   );
 };
