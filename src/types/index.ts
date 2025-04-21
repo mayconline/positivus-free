@@ -1,1 +1,1 @@
-export type { ContactUsForm, ContactUsFormResponse } from './contact-us-form';
+export type { ContactUsForm, ContactUsFormResponse } from './contactUsForm';

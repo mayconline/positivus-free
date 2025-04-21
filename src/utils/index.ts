@@ -1,1 +1,2 @@
-export { simulatePromise } from './simulate-promise';
+export { simulatePromise } from './simulatePromise';
+export { handleNotify } from './handleNotify';

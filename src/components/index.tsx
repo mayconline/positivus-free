@@ -11,3 +11,4 @@ export { Divider, DividerVariant } from './Divider';
 export { SectionTitle } from './SectionTitle';
 export { Input } from './Input';
 export { Spinner } from './Spinner';
+export { Notification } from './Notification';

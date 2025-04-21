@@ -1,11 +1,12 @@
 'use client';
 
 import Image from 'next/image';
-import { useActionState } from 'react';
+import { useActionState, useEffect } from 'react';
 import { Button, ButtonVariant, Input, SectionTitle } from '@/components';
 
 import ContactUSIllustration from '@/assets/img/contact-us-illustration.svg';
 import type { ContactUsFormResponse } from '@/types';
+import { handleNotify } from '@/utils';
 
 interface ContactUsProps {
   onSubmitForm: (
@@ -26,7 +27,11 @@ export const ContactUs = ({ onSubmitForm }: ContactUsProps) => {
       initialStateAction
     );
 
-  console.log('Form Action State', stateAction);
+  useEffect(() => {
+    if (stateAction?.status && stateAction?.message) {
+      handleNotify(stateAction?.message);
+    }
+  }, [stateAction]);
 
   return (
     <SectionTitle

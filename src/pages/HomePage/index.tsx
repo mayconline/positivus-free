@@ -8,7 +8,7 @@ import { Team } from '@/pages/HomePage/Team';
 import { Testimonials } from '@/pages/HomePage/Testimonials';
 import { ContactUs } from '@/pages/HomePage/ContactUs';
 import type { ContactUsFormResponse } from '@/types';
-import { simulatePromise } from '@/utils';
+import { handleNotify, simulatePromise } from '@/utils';
 
 export function HomePage() {
   const handleSubmitForm = async (
