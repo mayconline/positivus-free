@@ -9,7 +9,7 @@ export const ContactUs = () => {
       title="Contact Us"
       description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
     >
-      <main className="relative flex justify-between items-center bg-grey rounded-5xl pt-14 pb-20 px-24 overflow-hidden">
+      <main className="relative flex justify-between items-center bg-grey rounded-5xl pt-14 pb-20 px-12 lg:px-24 overflow-hidden">
         <ContactUsForm />
 
         <Image

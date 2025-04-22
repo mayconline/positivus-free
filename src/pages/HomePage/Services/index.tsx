@@ -78,12 +78,12 @@ export const Services = () => {
       description="At our digital marketing agency, we offer a range of services to
             help businesses grow and succeed online. These services include:"
     >
-      <main className="grid grid-cols-2 gap-8">
+      <main className="grid grid-cols-1 xl:grid-cols-2 gap-8 justify-center items-center">
         {servicesList.map((service) => (
           <Card
             key={service.description}
             variant={service.cardVariant}
-            className="w-[560px] flex-row justify-between gap-8"
+            className="w-full lg:w-[560px] flex-col lg:flex-row justify-between gap-8"
           >
             <div className="flex flex-col justify-between">
               <Paragraph
@@ -96,7 +96,13 @@ export const Services = () => {
                 {service.description}
               </Paragraph>
 
-              <Button className="mt-20" variant={ButtonVariant.Link}>
+              <Image
+                src={service.src}
+                alt={service.alt}
+                className="block lg:hidden my-10"
+              />
+
+              <Button className="lg:mt-20" variant={ButtonVariant.Link}>
                 <Image src={service.icon} alt="arrow up right icon" />
                 <Paragraph
                   className={clsx('ml-4', {
@@ -108,7 +114,11 @@ export const Services = () => {
               </Button>
             </div>
 
-            <Image src={service.src} alt={service.alt} />
+            <Image
+              src={service.src}
+              alt={service.alt}
+              className="hidden lg:block"
+            />
           </Card>
         ))}
       </main>

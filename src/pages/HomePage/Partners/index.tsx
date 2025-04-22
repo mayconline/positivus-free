@@ -36,7 +36,7 @@ const partnersLogo = [
 
 export const Partners = () => {
   return (
-    <section className="flex justify-between items-center">
+    <section className="flex flex-wrap justify-between items-center gap-2">
       {partnersLogo.map((partners) => (
         <Image
           className="mix-blend-luminosity"

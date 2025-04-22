@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import {
-  MenuBar,
+  Divider,
+  MenuList,
   Paragraph,
   ParagraphAsVariant,
   ParagraphSizeVariant,
@@ -11,25 +12,25 @@ import { SubscribeForm } from '@/components/Footer/SubscribeForm';
 export const Footer = () => {
   return (
     <footer className="flex flex-col bg-dark rounded-tl-5xl rounded-tr-5xl gap-12 pt-14 px-16 pb-12">
-      <nav className="flex justify-between items-center ">
+      <nav className="flex flex-col xl:flex-row justify-between items-center gap-10 ">
         <Image
           src="/logo-secondary.svg"
           alt="Positivus logo"
           width={180}
           height={29}
         />
-        <MenuBar
+        <MenuList
           className="text-white underline"
           size={ParagraphSizeVariant.Small}
           isFooter
         />
         <SocialBar />
       </nav>
-      <main className="flex items-center justify-between gap-10">
-        <section className="flex flex-1 flex-col gap-5 w-1/2">
+      <main className="flex flex-col xl:flex-row items-center justify-between gap-10">
+        <section className="flex flex-wrap lg:flex-nowrap flex-1 flex-col gap-5 lg:w-1/2 text-center lg:text-left">
           <Paragraph
             as={ParagraphAsVariant.H4}
-            className="font-medium bg-green w-fit rounded-lg"
+            className="font-medium bg-green rounded-lg w-fit"
           >
             Contact us:
           </Paragraph>
@@ -51,7 +52,10 @@ export const Footer = () => {
         </section>
         <SubscribeForm />
       </main>
-      <aside className="flex items-center gap-10">
+
+      <Divider />
+
+      <aside className="flex flex-col lg:flex-row items-center gap-10">
         <Paragraph size={ParagraphSizeVariant.Small} className="text-white">
           © 2023 Positivus. All Rights Reserved.
         </Paragraph>

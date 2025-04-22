@@ -70,7 +70,7 @@ export const Team = () => {
       title="Team"
       description="Meet the skilled and experienced team behind our successful digital marketing strategies"
     >
-      <main className="grid grid-cols-3 gap-10">
+      <main className="grid grid-col-1 md:grid-cols-2 xl:grid-cols-3 gap-10 justify-center">
         {teamList.map((team) => (
           <Card key={team.title} className="w-[387px] gap-8 px-8! py-10!">
             <header className="flex flex-row gap-2">
@@ -104,7 +104,10 @@ export const Team = () => {
       </main>
 
       <footer className="mt-10 flex justify-end">
-        <Button variant={ButtonVariant.Secondary} className="w-[269px]">
+        <Button
+          variant={ButtonVariant.Secondary}
+          className="w-full xl:w-[269px]"
+        >
           See all team
         </Button>
       </footer>

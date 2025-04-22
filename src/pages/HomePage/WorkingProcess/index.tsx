@@ -83,6 +83,7 @@ export const WorkingProcess = () => {
                 ? CardVariant.Secondary
                 : CardVariant.Primary
             }
+            onClick={() => handleSetOpenCard(workingProcess.id)}
           >
             <div className="flex flex-col w-full">
               <header className="flex items-center justify-between">
@@ -104,6 +105,7 @@ export const WorkingProcess = () => {
                 <Button
                   variant={ButtonVariant.Link}
                   onClick={() => handleSetOpenCard(workingProcess.id)}
+                  className="w-14 h-14"
                 >
                   <Image
                     src={openCard === workingProcess.id ? MinusIcon : PlusIcon}

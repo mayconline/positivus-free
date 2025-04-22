@@ -10,7 +10,10 @@ export const ContactUsForm = () => {
   });
 
   return (
-    <form className="flex flex-col w-[556px] gap-10 z-10" action={formAction}>
+    <form
+      className="flex flex-col lg:w-[556px] gap-10 z-10"
+      action={formAction}
+    >
       <section className="flex gap-8">
         <Input.Radio
           label="Say Hi"
@@ -40,7 +43,7 @@ export const ContactUsForm = () => {
 
       <Button
         variant={ButtonVariant.Secondary}
-        className="w-[556px]"
+        className="w-full lg:w-[556px]"
         disabled={pending}
         isLoading={pending}
         type="submit"

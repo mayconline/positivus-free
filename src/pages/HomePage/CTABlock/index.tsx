@@ -21,14 +21,17 @@ export const CTABlock = () => {
           services can help your business grow and succeed online.
         </Paragraph>
 
-        <Button variant={ButtonVariant.Secondary} className="w-[288px]">
+        <Button
+          variant={ButtonVariant.Secondary}
+          className="w-full lg:w-[288px]"
+        >
           Get your free proposal
         </Button>
       </article>
 
       <Image
         src={CTABlockIllustation}
-        className="absolute -top-6 -bottom-8 right-32"
+        className="absolute -top-6 -bottom-8 right-32 hidden lg:block"
         alt="black circle with 3 stars next to it"
         width={359}
         height={394.27}

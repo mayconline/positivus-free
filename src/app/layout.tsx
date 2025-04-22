@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} antialiased px-24 pt-14 max-w-[1440px] mx-auto`}
+        className={`${geistSans.variable} antialiased px-5 lg:px-24 pt-14 lg:max-w-[1440px] mx-auto`}
       >
         <Notification />
         <Header />

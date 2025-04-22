@@ -6,6 +6,7 @@ import {
   Paragraph,
   ParagraphAsVariant,
   ParagraphSizeVariant,
+  SectionTitle,
 } from '@/components';
 
 import ArrowUpRightTertiary from '@/assets/icons/arrow-up-right-tertiary.svg';
@@ -18,25 +19,11 @@ const articleList = [
 
 export const CaseStudies = () => {
   return (
-    <section className="flex flex-col my-24">
-      <header className="flex items-center mb-20">
-        <Paragraph
-          as={ParagraphAsVariant.H2}
-          size={ParagraphSizeVariant.SemiLarge}
-          className="font-medium bg-green"
-        >
-          Case Studies
-        </Paragraph>
-        <Paragraph
-          size={ParagraphSizeVariant.Small}
-          className="w-[580px] ml-10"
-        >
-          Explore Real-Life Examples of Our Proven Digital Marketing Success
-          through Our Case Studies
-        </Paragraph>
-      </header>
-
-      <main className="flex justify-between items-center bg-dark rounded-5xl relative p-14">
+    <SectionTitle
+      title="Case Studies"
+      description="Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies"
+    >
+      <main className="flex flex-col lg:flex-row justify-between items-center bg-dark rounded-5xl relative p-14">
         {articleList.map((article, index) => (
           <div key={article}>
             <article className="flex flex-col w-[286px] gap-4">
@@ -62,11 +49,11 @@ export const CaseStudies = () => {
             </article>
 
             {index !== articleList.length - 1 && (
-              <Divider className="absolute top-14 ml-80 h-[186px]" />
+              <Divider className="absolute top-14 ml-80 h-[186px] hidden xl:block" />
             )}
           </div>
         ))}
       </main>
-    </section>
+    </SectionTitle>
   );
 };

@@ -5,6 +5,7 @@ export {
   ParagraphAsVariant,
 } from './Paragraph';
 export { MenuBar } from './MenuBar';
+export { MenuList } from './MenuBar/MenuList';
 export { Header } from './Header';
 export { Card, CardVariant } from './Card';
 export { Divider, DividerVariant } from './Divider';

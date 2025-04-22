@@ -11,7 +11,7 @@ export const SubscribeForm = () => {
 
   return (
     <form
-      className="flex justify-between items-center gap-5 bg-grey-dark rounded-1xl px-10 py-14 w-[600px]"
+      className="flex flex-col lg:flex-row justify-between items-center gap-5 bg-grey-dark rounded-1xl px-10 py-14 w-full lg:w-[600px]"
       action={formAction}
     >
       <Input.Text
@@ -22,7 +22,7 @@ export const SubscribeForm = () => {
       />
       <Button
         variant={ButtonVariant.Tertiary}
-        className="w-[249px] h-[68px]"
+        className="w-full lg:w-[249px] h-[68px]"
         disabled={pending}
         isLoading={pending}
         type="submit"

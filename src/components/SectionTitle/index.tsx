@@ -17,7 +17,7 @@ export const SectionTitle = ({
 }: SectionTitleProps) => {
   return (
     <section className="flex flex-col my-24">
-      <header className="flex items-center mb-20">
+      <header className="flex flex-col lg:flex-row items-center text-center lg:text-left mb-20 gap-5">
         <Paragraph
           as={ParagraphAsVariant.H2}
           size={ParagraphSizeVariant.SemiLarge}
@@ -27,7 +27,7 @@ export const SectionTitle = ({
         </Paragraph>
         <Paragraph
           size={ParagraphSizeVariant.Small}
-          className="w-[580px] ml-10"
+          className="lg:w-[580px] ml-10"
         >
           {description}
         </Paragraph>

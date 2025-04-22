@@ -21,11 +21,11 @@ export const TestimonialCard = ({
 }: TestimonialCardProps) => {
   return (
     <div className="flex flex-col justify-center items-center mt-10">
-      <main className="bg-transparent! p-6 text-white text-center w-[600px] relative">
+      <main className="bg-transparent! p-6 text-white text-center lg:w-[600px] relative">
         <Image
           src={BgTestimonal}
           alt="bg-testimonial"
-          className="absolute top-0 left-0 -z-10"
+          className="absolute top-0 left-0 -z-10 hidden lg:block"
         />
 
         <Paragraph
