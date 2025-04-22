@@ -21,6 +21,7 @@ export const handleSubscribe = async (
       message: 'Form submitted successfully!',
     };
   } catch (error) {
+    console.error('error', error);
     return {
       status: 'Error',
       message: 'An error occurred while submitting the form.',

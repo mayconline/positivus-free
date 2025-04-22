@@ -1,9 +1,4 @@
-import {
-  Card,
-  CardVariant,
-  Paragraph,
-  ParagraphSizeVariant,
-} from '@/components';
+import { Paragraph, ParagraphSizeVariant } from '@/components';
 
 import BgTestimonal from '@/assets/img/bg-testimonial.svg';
 import Image from 'next/image';
@@ -32,7 +27,7 @@ export const TestimonialCard = ({
           className="text-white mt-4"
           size={ParagraphSizeVariant.Small}
         >
-          "{content}"
+          {`"${content}"`}
         </Paragraph>
 
         <span className="flex flex-col mt-24 w-full text-left">

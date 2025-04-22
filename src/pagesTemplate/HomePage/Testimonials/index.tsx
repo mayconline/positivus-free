@@ -2,10 +2,10 @@
 
 import { useState } from 'react';
 
-import { Card, CardVariant, SectionTitle } from '@/components';
-import { CarouselControls } from '@/pages/HomePage/Testimonials/CarouselControls';
-import { CarouselIndicators } from '@/pages/HomePage/Testimonials/CarouselIndicators';
-import { TestimonialCard } from '@/pages/HomePage/Testimonials/TestimonialCard';
+import { SectionTitle } from '@/components';
+import { CarouselControls } from '@/pagesTemplate/HomePage/Testimonials/CarouselControls';
+import { CarouselIndicators } from '@/pagesTemplate/HomePage/Testimonials/CarouselIndicators';
+import { TestimonialCard } from '@/pagesTemplate/HomePage/Testimonials/TestimonialCard';
 
 const testimonialsList = [
   {

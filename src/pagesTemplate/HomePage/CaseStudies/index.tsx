@@ -4,7 +4,6 @@ import {
   ButtonVariant,
   Divider,
   Paragraph,
-  ParagraphAsVariant,
   ParagraphSizeVariant,
   SectionTitle,
 } from '@/components';

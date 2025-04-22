@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { SectionTitle } from '@/components';
 import ContactUSIllustration from '@/assets/img/contact-us-illustration.svg';
-import { ContactUsForm } from '@/pages/HomePage/ContactUs/ContactUsForm';
+import { ContactUsForm } from '@/pagesTemplate/HomePage/ContactUs/ContactUsForm';
 
 export const ContactUs = () => {
   return (
