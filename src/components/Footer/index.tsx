@@ -7,7 +7,6 @@ import {
   SocialBar,
 } from '@/components';
 import { SubscribeForm } from '@/components/Footer/SubscribeForm';
-import { handleSubscribe } from '@/services/api';
 
 export const Footer = () => {
   return (
@@ -50,7 +49,7 @@ export const Footer = () => {
             Moonstone City, Stardust State 12345
           </Paragraph>
         </section>
-        <SubscribeForm onSubmitForm={handleSubscribe} />
+        <SubscribeForm />
       </main>
       <aside className="flex items-center gap-10">
         <Paragraph size={ParagraphSizeVariant.Small} className="text-white">

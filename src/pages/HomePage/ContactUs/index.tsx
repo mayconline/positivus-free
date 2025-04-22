@@ -2,7 +2,6 @@ import Image from 'next/image';
 import { SectionTitle } from '@/components';
 import ContactUSIllustration from '@/assets/img/contact-us-illustration.svg';
 import { ContactUsForm } from '@/pages/HomePage/ContactUs/ContactUsForm';
-import { handleContactUs } from '@/services/api';
 
 export const ContactUs = () => {
   return (
@@ -11,7 +10,7 @@ export const ContactUs = () => {
       description="Connect with Us: Let's Discuss Your Digital Marketing Needs"
     >
       <main className="relative flex justify-between items-center bg-grey rounded-5xl pt-14 pb-20 px-24 overflow-hidden">
-        <ContactUsForm onSubmitForm={handleContactUs} />
+        <ContactUsForm />
 
         <Image
           src={ContactUSIllustration}

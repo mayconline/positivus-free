@@ -2,15 +2,11 @@
 
 import { Input, Button, ButtonVariant } from '@/components';
 import { useHandleForm } from '@/hooks';
-import type { SubmitForm } from '@/types';
+import { handleContactUs } from '@/services/api';
 
-interface ContactUsFormProps {
-  onSubmitForm: SubmitForm;
-}
-
-export const ContactUsForm = ({ onSubmitForm }: ContactUsFormProps) => {
+export const ContactUsForm = () => {
   const { formAction, pending } = useHandleForm({
-    onSubmitForm,
+    onSubmitForm: handleContactUs,
   });
 
   return (

@@ -2,15 +2,11 @@
 
 import { useHandleForm } from '@/hooks';
 import { Button, ButtonVariant, Input, InputTextVariant } from '@/components';
-import type { SubmitForm } from '@/types';
+import { handleSubscribe } from '@/services/api';
 
-interface SubscribeFormProps {
-  onSubmitForm: SubmitForm;
-}
-
-export const SubscribeForm = ({ onSubmitForm }: SubscribeFormProps) => {
+export const SubscribeForm = () => {
   const { formAction, pending } = useHandleForm({
-    onSubmitForm,
+    onSubmitForm: handleSubscribe,
   });
 
   return (
