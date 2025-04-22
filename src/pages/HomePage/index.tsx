@@ -7,43 +7,8 @@ import { WorkingProcess } from '@/pages/HomePage/WorkingProcess';
 import { Team } from '@/pages/HomePage/Team';
 import { Testimonials } from '@/pages/HomePage/Testimonials';
 import { ContactUs } from '@/pages/HomePage/ContactUs';
-import type { ContactUsFormResponse } from '@/types';
-import { handleNotify, simulatePromise } from '@/utils';
 
 export function HomePage() {
-  const handleSubmitForm = async (
-    prevActionState: ContactUsFormResponse,
-    formData: FormData
-  ): Promise<ContactUsFormResponse> => {
-    'use server';
-
-    try {
-      const contactReason = formData.get('contact-reason');
-      const name = formData.get('name');
-      const email = formData.get('email');
-      const message = formData.get('message');
-
-      console.log('Raw Form Data', {
-        contactReason,
-        name,
-        email,
-        message,
-      });
-
-      await simulatePromise();
-
-      return {
-        status: 'Success',
-        message: 'Form submitted successfully!',
-      };
-    } catch (error) {
-      return {
-        status: 'Error',
-        message: 'An error occurred while submitting the form.',
-      };
-    }
-  };
-
   return (
     <main className="flex flex-col justify-center">
       <MainContent />
@@ -54,7 +19,7 @@ export function HomePage() {
       <WorkingProcess />
       <Team />
       <Testimonials />
-      <ContactUs onSubmitForm={handleSubmitForm} />
+      <ContactUs />
     </main>
   );
 }

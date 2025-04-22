@@ -1,1 +1,2 @@
-export type { ContactUsForm, ContactUsFormResponse } from './contactUsForm';
+export type { FormActionStatus } from './formActionStatus';
+export type { SubmitForm } from './submitForm';

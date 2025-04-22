@@ -5,16 +5,20 @@
   --black: #000000;
   --dark: #191a23;
   --green: #b9ff66;
-  --grey: #f3f3f3;
   --green-dark: #21241d;
+  --grey: #f3f3f3;
+  --grey-light: #898989;
+  --grey-dark: #292a32;
 }
 
 @theme inline {
   --color-background: var(--white);
   --color-dark: var(--dark);
   --color-green: var(--green);
-  --color-grey: var(--grey);
   --color-green-dark: var(--green-dark);
+  --color-grey: var(--grey);
+  --color-grey-light: var(--grey-light);
+  --color-grey-dark: var(--grey-dark);
   --font-sans: var(--font-geist-sans);
   --text-4xl: 2.5rem;
   --shadow-card: 0px 5px 0px 0px var(--dark);

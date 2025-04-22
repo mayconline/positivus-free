@@ -5,7 +5,8 @@ import { Spinner } from '@/components';
 export enum ButtonVariant {
   Primary = 'primary',
   Secondary = 'secondary',
-  Link = 'tertiary',
+  Tertiary = 'tertiary',
+  Link = 'link',
 }
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
@@ -26,6 +27,8 @@ export const Button = ({
       'py-5 px-8 bg-background hover:bg-black/10 text-black border border-dark',
     [ButtonVariant.Secondary]:
       'py-5 px-8 bg-dark hover:bg-dark/90 text-white border border-dark',
+    [ButtonVariant.Tertiary]:
+      'py-5 px-8 bg-green hover:bg-green/90 text-black border border-green',
     [ButtonVariant.Link]: 'bg-transparent',
   };
 

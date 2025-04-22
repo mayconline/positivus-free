@@ -1,5 +1,5 @@
 import { InputRadio } from './Radio';
-import { InputText } from './Text';
+import { InputText, InputTextVariant } from './Text';
 import { InputTextArea } from './TextArea';
 
 export const Input = {
@@ -7,3 +7,5 @@ export const Input = {
   Text: InputText,
   TextArea: InputTextArea,
 };
+
+export { InputTextVariant };
