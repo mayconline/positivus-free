@@ -38,5 +38,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 #### 📱 Preview Dashboard
 
 <p align="center">
-<video src='' width=180/> 
+<video src='https://github.com/user-attachments/assets/d0937cd4-98eb-416c-969d-8ba6bc886062' width=180/>
+
 </p>
