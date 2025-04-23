@@ -17,7 +17,7 @@ Template - [Figma](https://www.figma.com/design/40Fc50DMZxIZFIaA1zuZtb/Positivus
 - [TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
 - [Next.js](https://nextjs.org/docs/getting-started)
 - [Tailwind CSS](https://tailwindcss.com/)
-- [Landing Page Deploy]('')
+- [Landing Page Deploy](https://positivus-free-5yuc.vercel.app/)
 
 ## Getting Started
 
@@ -34,3 +34,9 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+#### 📱 Preview Dashboard
+
+<p align="center">
+<video src='' width=180/> 
+</p>
